@@ -7,7 +7,7 @@
 @media(min-width: 768px){
 .parallax {
   /* The image used */
-  background-image: url('group_pic.jpg');
+  background-image: url('/img/group_pic.jpg');
 
   /* Full height */
   height: 100%; 
