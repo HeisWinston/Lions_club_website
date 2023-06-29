@@ -16,7 +16,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
+        column-gap: 30px;
         background-color: #4070f4;
     }
 
@@ -147,7 +147,7 @@
 
     .media-options a{
         display: flex;
-        background-color:    #4267b2;
+       
         align-items: center;
         justify-content: center;
 
@@ -171,9 +171,28 @@
 
     }
 
-    .facebook-icon{
+    .facebook-icon,
+    img.google-img{
         position: absolute;
         top: 50%;
         left: 15px;
         transform: translateY(-50%);
+    }
+
+    img.google-img{
+        height: 30px;
+        width: 30px;
+        object-fit: cover;
+
+
+    }
+
+    a.google{
+        border: 1px solid #CACACA;
+    }
+
+    a.google span{
+        color: #232836;
+        opacity: .6;
+        font-weight: 500;
     }
