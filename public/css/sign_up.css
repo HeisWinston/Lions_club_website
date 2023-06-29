@@ -113,11 +113,12 @@
     }
 
     .form a{
+        color: #0171d3;
         text-decoration: none;
         
     }
     
-    form a:hover{
+    .form-content a:hover{
         text-decoration:underline;
         
     }
@@ -154,4 +155,25 @@
     a.facebook{
         color: #fff;
         background-color: #4267b2
+    }
+
+    a.facebook  .facebook-icon{
+
+        height: 28px;
+        width: 28px;
+        color: #0171d3;
+        font-size: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content:  center;
+        background-color: #fff;
+
+    }
+
+    .facebook-icon{
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
     }
