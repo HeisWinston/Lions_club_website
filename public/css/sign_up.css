@@ -43,10 +43,12 @@
         margin-top: 30px;
 
     }
-    form .field{
-        height: 45px;
+    .form .field{
+        position: relative;
+        height: 50px;
         width: 100%;
         margin-top: 20px;
+        border-radius: 6px;
 
     }
     .field input,   
@@ -69,11 +71,87 @@
 
     }
 
+    .field input :focus{
+        border-bottom-width:2px;
+
+
+    }
+
+    .eye-icon{
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50);
+        font-size: 18px;
+        color: #8b8b8b;
+        cursor: pointer;
+        padding: 5px;
+    }
+    .field button{
+        color: #fff;
+        background-color: #0171d3;
+        transition: all .3s ease;
+        cursor: pointer;
+    }
+    .field button:hover{
+
+        background-color: #0171d3;
+    }
+
+
     .form-link{
         text-align: center;
         margin-top: 10px;
 
     }
 
+    .form-link span,
+    .form-link  a{
+        font-size: 14px;
+        font-weight: 400;
 
-  
+    }
+
+    .form a{
+        text-decoration: none;
+        
+    }
+    
+    form a:hover{
+        text-decoration:underline;
+        
+    }
+
+
+    .line{
+        height: 1px;
+        width: 100%;
+        position: relative;
+        background-color: #d4d4d4;
+        margin: 36px 0;
+          
+    }
+
+    .line::before{
+        content: 'Or';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fFf;
+        color: #232836;
+        padding: 0 15px;
+    }
+
+
+    .media-options a{
+        display: flex;
+        background-color:    #4267b2;
+        align-items: center;
+        justify-content: center;
+
+    }
+    a.facebook{
+        color: #fff;
+        background-color: #4267b2
+    }
