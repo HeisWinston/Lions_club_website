@@ -1,0 +1,14 @@
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-image: url("/img/background_for_events.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+   
+    
+}
