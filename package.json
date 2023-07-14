@@ -5,6 +5,7 @@
         "scss": "node-sass --watch scss -o css"
     },
     "dependencies": {
+        "bcrypt": "^5.1.0",
         "connect-session-sequelize": "^7.1.4",
         "dotenv": "^8.2.0",
         "express": "^4.17.1",
