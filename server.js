@@ -12,7 +12,8 @@ const app = express();
 const sess = {
   secret: 'Super secret secret',
   cookie: {
-    maxAge: 86400,
+    // milliseconds ref: http://expressjs.com/en/resources/middleware/session.html
+    maxAge: 86400000,
   },
   resave: false,
   saveUninitialized: true,
