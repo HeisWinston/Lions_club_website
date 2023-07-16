@@ -1,4 +1,5 @@
 const User = require('./User');
+const Newsletter = require('./Newsletter');
 
 // Post.belongsTo(User, {
 //   foreignKey: 'userId',
@@ -21,5 +22,6 @@ const User = require('./User');
 // Collection.belongsTo(Plants)
 
 module.exports = {
-  User
+  User,
+  Newsletter
 }
