@@ -5,7 +5,7 @@ const merch = require('./merch');
 const user = require('./user');
 const forum = require('./forum');
 
-
+// test
 router.use('/', home);
 router.use('/events', events);
 router.use('/merch', merch);
