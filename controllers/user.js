@@ -5,7 +5,7 @@ router.get('/', async (req, res) => {
     res.render('homepage', { layout: 'sign_up', logged_in: req.session.logged_in });
 })
 
-router.post('/register', async (req, res) => {
+router.post('/sign_up', async (req, res) => {
     try {
       const userData = await User.create({
         user_name: req.body.user_name,
@@ -21,7 +21,7 @@ router.post('/register', async (req, res) => {
         res.status(200).json(userData);
       });
     } catch (err) {
-      res.status(400).json(err);
+        res.status(400).json(err);
     }
     console.log("ROUTE TEST");
   });
