@@ -71,17 +71,15 @@ async function loginFormHandler(event) {
             }),
             headers: { "Content-Type": "application/json" },
         });
-        //had to delay execution of the code below, because session obg was being accessed too soon, therefore api/route couldn't get passed withAuth
-        setTimeout(() => {
-            if (response.ok) {
-                // document.location.replace("/api/profile");
-                alert(response);
-            } else {
-                console.log(response.status);
-            }
-        }, "400");
+        const userData = await response.json();
+        if (response.ok) {
+            alert(userData.message);
+            document.location.replace("/");
+        } else {
+            console.log(response.status);
+        }
     }
 }
 
-// document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+document.querySelector('.login').addEventListener('submit', loginFormHandler);
 document.querySelector(".signup").addEventListener("submit", signupFormHandler);
