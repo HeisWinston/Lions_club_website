@@ -6,7 +6,7 @@ const user = require('./user');
 const forum = require('./forum');
 const post_login_home = require('./post_login_home');
 
-
+// fixing merge conflict
 router.use('/', home);
 router.use('/events', events);
 router.use('/merch', merch);
