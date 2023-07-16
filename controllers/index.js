@@ -4,13 +4,15 @@ const events = require('./events');
 const merch = require('./merch');
 const sign_up = require('./sign_up');
 const forum = require('./forum');
+const post_login_home = require('./post_login_home');
 
 
 router.use('/', home);
 router.use('/events', events);
 router.use('/merch', merch);
 router.use('/sign_up', sign_up);
-router.use('/forum', forum);
+router.use('/post_login_home', post_login_home);
+
 
 
 
